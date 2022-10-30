@@ -4,7 +4,7 @@ endif
 
 .PHONY: nvim
 nvim:
-	cp .config/nvim/init.vim ~/.config/nvim/init.vim && source ~/.config/nvim/init.vim
+	cp .config/nvim/init.vim ~/.config/nvim/init.vim
 
 .PHONY: tmux
 tmux:
