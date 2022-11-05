@@ -5,5 +5,9 @@
         "command": "vscode-neovim.send",
         "when": "editorTextFocus && neovim.init && neovim.mode == visual",
         "args": "<C-/>"
+    },
+    {
+        "key": "shift+cmd+f",
+        "command": "search.action.openNewEditorToSide"
     }
 ]
