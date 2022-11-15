@@ -1,6 +1,7 @@
 {
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
+    "git.confirmSync": false,
     "terminal.integrated.scrollback": 1000000,
     "workbench.colorTheme": "Dracula",
     "workbench.iconTheme": "material-icon-theme",
