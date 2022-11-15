@@ -1,0 +1,8 @@
+{
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.scrollback": 1000000,
+    "workbench.colorTheme": "Dracula",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.panel.defaultLocation": "right"
+}
