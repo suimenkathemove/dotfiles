@@ -11,6 +11,6 @@
     "terminal.external.osxExec": "warp.app",
     "terminal.integrated.scrollback": 1000000,
     "workbench.colorTheme": "Dracula",
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "material-icon-theme",
     "workbench.panel.defaultLocation": "right"
 }
