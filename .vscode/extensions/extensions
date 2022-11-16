@@ -4,3 +4,6 @@ asvetliakov.vscode-neovim
 cschleiden.vscode-github-actions
 dbaeumer.vscode-eslint
 dracula-theme.theme-dracula
+eamodio.gitlens
+esbenp.prettier-vscode
+formulahendry.auto-rename-tag
