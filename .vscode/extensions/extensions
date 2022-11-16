@@ -19,3 +19,5 @@ oderwat.indent-rainbow
 rust-lang.rust-analyzer
 serayuzgur.crates
 streetsidesoftware.code-spell-checker
+styled-components.vscode-styled-components
+stylelint.vscode-stylelint
