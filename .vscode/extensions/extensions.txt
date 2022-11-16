@@ -7,6 +7,7 @@ dracula-theme.theme-dracula
 eamodio.gitlens
 esbenp.prettier-vscode
 formulahendry.auto-rename-tag
+foxundermoon.shell-format
 GitHub.copilot
 GitHub.copilot-labs
 IBM.output-colorizer
@@ -24,5 +25,6 @@ styled-components.vscode-styled-components
 stylelint.vscode-stylelint
 tamasfe.even-better-toml
 team-sapling.sapling
+timonwong.shellcheck
 vadimcn.vscode-lldb
 vsls-contrib.codetour
