@@ -16,6 +16,7 @@ mhutchie.git-graph
 mrmlnc.vscode-scss
 ms-azuretools.vscode-docker
 oderwat.indent-rainbow
+PKief.material-icon-theme
 rust-lang.rust-analyzer
 serayuzgur.crates
 streetsidesoftware.code-spell-checker
@@ -24,5 +25,4 @@ stylelint.vscode-stylelint
 tamasfe.even-better-toml
 team-sapling.sapling
 vadimcn.vscode-lldb
-vscode-icons-team.vscode-icons
 vsls-contrib.codetour
