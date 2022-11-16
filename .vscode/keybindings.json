@@ -9,5 +9,10 @@
     {
         "key": "shift+cmd+f",
         "command": "search.action.openNewEditorToSide"
+    },
+    {
+        "key": "cmd+s",
+        "command": "searchEditorApplyChanges.apply",
+        "when": "inSearchEditor"
     }
 ]
