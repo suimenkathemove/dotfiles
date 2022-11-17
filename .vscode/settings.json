@@ -1,9 +1,6 @@
 {
     "editor.acceptSuggestionOnEnter": "off",
     "editor.inlineSuggest.enabled": true,
-    "editor.rulers": [
-        80
-    ],
     "editor.wordWrap": "on",
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
