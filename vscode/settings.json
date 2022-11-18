@@ -1,13 +1,13 @@
 {
-    "editor.acceptSuggestionOnEnter": "off",
-    "editor.inlineSuggest.enabled": true,
-    "editor.wordWrap": "on",
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "git.confirmSync": false,
-    "terminal.external.osxExec": "warp.app",
-    "terminal.integrated.scrollback": 1000000,
-    "workbench.colorTheme": "Dracula",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.panel.defaultLocation": "right"
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.inlineSuggest.enabled": true,
+  "editor.wordWrap": "on",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "git.confirmSync": false,
+  "terminal.external.osxExec": "warp.app",
+  "terminal.integrated.scrollback": 1000000,
+  "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.panel.defaultLocation": "right"
 }
