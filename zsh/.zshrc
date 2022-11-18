@@ -7,3 +7,4 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 
 # .commands
 alias hello-world="sh ~/.commands/hello-world.sh"
+alias tmux-start="sh ~/.commands/tmux-start.sh"
