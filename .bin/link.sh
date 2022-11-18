@@ -6,6 +6,7 @@ ROOT_DIR="$(cd ../ && pwd)"
 COMMANDS_TARGET_DIR="$ROOT_DIR/.commands"
 COMMANDS_LINK_NAME_DIR="${HOME}/.commands"
 
+mkdir "$COMMANDS_LINK_NAME_DIR"
 for FILE in $(cd "$COMMANDS_TARGET_DIR" && ls); do
   ln -sfnv "$COMMANDS_TARGET_DIR/$FILE" "$COMMANDS_LINK_NAME_DIR/$FILE"
 done
