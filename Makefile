@@ -9,3 +9,7 @@ nvim:
 .PHONY: tmux
 tmux:
 	cp .tmux.conf ~/ && tmux source-file ~/.tmux.conf
+
+.PHONY: link
+link:
+	cd ./.bin && sh link.sh
