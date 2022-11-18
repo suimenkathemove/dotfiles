@@ -31,3 +31,4 @@ team-sapling.sapling
 timonwong.shellcheck
 vadimcn.vscode-lldb
 vsls-contrib.codetour
+yzhang.markdown-all-in-one
