@@ -11,5 +11,5 @@ for FILE in $(cd "$VSCODE_TARGET_DIR" && ls); do
     continue
   fi
 
-  ln -sfnv "$VSCODE_TARGET_DIR/$FILE" "$VSCODE_LINK_NAME_DIR/$FILE"
+  ln -sfv "$VSCODE_TARGET_DIR/$FILE" "$VSCODE_LINK_NAME_DIR/$FILE"
 done
