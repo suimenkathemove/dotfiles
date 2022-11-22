@@ -12,6 +12,8 @@ foxundermoon.shell-format
 gera2ld.markmap-vscode
 GitHub.copilot
 GitHub.copilot-labs
+GraphQL.vscode-graphql
+GraphQL.vscode-graphql-syntax
 IBM.output-colorizer
 jakearl.search-editor-apply-changes
 LeetCode.vscode-leetcode
