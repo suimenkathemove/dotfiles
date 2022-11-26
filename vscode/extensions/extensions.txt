@@ -29,6 +29,7 @@ shd101wyy.markdown-preview-enhanced
 streetsidesoftware.code-spell-checker
 styled-components.vscode-styled-components
 stylelint.vscode-stylelint
+TakumiI.markdowntable
 tamasfe.even-better-toml
 team-sapling.sapling
 timonwong.shellcheck
