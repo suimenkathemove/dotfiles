@@ -1,3 +1,3 @@
 #!/bin/bash
 
-code -g "${HOME}/development/emgniddikur/slack-clone"
+code -g "${HOME}/development/suimenkathemove/slack-clone"

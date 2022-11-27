@@ -1,3 +1,3 @@
 #!/bin/bash
 
-code -g "${HOME}/development/emgniddikur/dotfiles"
+code -g "${HOME}/development/suimenkathemove/dotfiles"
