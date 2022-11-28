@@ -1,9 +1,9 @@
 #!/bin/sh
 
-ROOT_DIR="$(cd ../ && pwd)"
+DOTFILES_PATH="$(cd ../ && pwd)"
 
 # .commands
-COMMANDS_TARGET_DIR="$ROOT_DIR/.commands"
+COMMANDS_TARGET_DIR="$DOTFILES_PATH/.commands"
 COMMANDS_LINK_NAME_DIR="${HOME}/.commands"
 
 mkdir "$COMMANDS_LINK_NAME_DIR"
@@ -12,7 +12,7 @@ for FILE in $(cd "$COMMANDS_TARGET_DIR" && ls); do
 done
 
 # VSCode
-VSCODE_TARGET_DIR="$ROOT_DIR/vscode"
+VSCODE_TARGET_DIR="$DOTFILES_PATH/vscode"
 VSCODE_LINK_NAME_DIR="${HOME}/Library/Application Support/Code/User"
 
 for FILE in $(cd "$VSCODE_TARGET_DIR" && ls); do
