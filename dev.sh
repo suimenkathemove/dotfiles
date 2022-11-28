@@ -4,7 +4,7 @@ PROJECT_NAME="dotfiles"
 
 DEV_DIR="${HOME}/development/suimenkathemove"
 
-cd "$DEV_DIR/$PROJECT_NAME"
+cd "$DEV_DIR/$PROJECT_NAME" || exit
 
 if tmux has-session -t "$PROJECT_NAME"; then
   tmux attach-session -t "$PROJECT_NAME"
