@@ -13,3 +13,4 @@ tmux:
 .PHONY: link
 link:
 	cd ./.bin && sh link.sh
+	cd ./dotfiles_private/ && make link
