@@ -2,6 +2,15 @@
 
 DOTFILES_PATH="$(cd ../ && pwd)"
 
+ln_files_in_dir() {
+  for FILE in $(cd "$1" && ls -A); do
+    ln -sfnv "$1/$FILE" "$2/$FILE"
+  done
+}
+
+# zsh
+ln_files_in_dir "$DOTFILES_PATH/zsh" "$HOME"
+
 # .commands
 COMMANDS_TARGET_DIR="$DOTFILES_PATH/.commands"
 COMMANDS_LINK_NAME_DIR="${HOME}/.commands"
