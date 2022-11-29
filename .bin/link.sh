@@ -11,6 +11,9 @@ ln_files_in_dir() {
 # zsh
 ln_files_in_dir "$DOTFILES_PATH/zsh" "$HOME"
 
+# git
+ln_files_in_dir "$DOTFILES_PATH/git" "$HOME"
+
 # .commands
 COMMANDS_LINK_NAME_DIR="${HOME}/.commands"
 
