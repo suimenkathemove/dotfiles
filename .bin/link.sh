@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DOTFILES_PATH="$(cd ../ && pwd)"
+DOTFILES_PATH="$(pwd)"
 
 ln_files_in_dir() {
   for FILE in $(cd "$1" && ls -A); do
