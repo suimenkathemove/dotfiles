@@ -20,5 +20,8 @@ ln_files_in_dir "$COMMANDS_LINK_NAME_DIR" "${HOME}/.commands"
 # nvim
 ln -sfnv "$DOTFILES_PATH/nvim/init.vim" "$HOME/.config/nvim/init.vim"
 
+# tmux
+ln -sfnv "$DOTFILES_PATH/tmux/.tmux.conf" "$HOME/.tmux.conf"
+
 # VSCode
 ln_files_in_dir "$DOTFILES_PATH/vscode" "${HOME}/Library/Application Support/Code/User"
