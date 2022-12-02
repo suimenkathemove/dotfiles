@@ -15,10 +15,8 @@ ln_files_in_dir "$DOTFILES_PATH/zsh" "$HOME"
 ln_files_in_dir "$DOTFILES_PATH/git" "$HOME"
 
 # .commands
-COMMANDS_LINK_NAME_DIR="${HOME}/.commands"
-
-mkdir -p "$COMMANDS_LINK_NAME_DIR"
-ln_files_in_dir "$COMMANDS_LINK_NAME_DIR" "${HOME}/.commands"
+COMMANDS_DIR=".commands"
+ln -sfnv "$DOTFILES_PATH/$COMMANDS_DIR" "$HOME/$COMMANDS_DIR"
 
 # nvim
 ln -sfnv "$DOTFILES_PATH/nvim/init.vim" "$HOME/.config/nvim/init.vim"
