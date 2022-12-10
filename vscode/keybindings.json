@@ -14,5 +14,10 @@
     "key": "cmd+s",
     "command": "searchEditorApplyChanges.apply",
     "when": "inSearchEditor"
+  },
+  {
+    "key": "cmd+b",
+    "command": "-markdown.extension.editing.toggleBold",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^qmd$/"
   }
 ]
