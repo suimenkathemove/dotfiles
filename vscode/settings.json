@@ -6,6 +6,11 @@
   "explorer.confirmDragAndDrop": false,
   "git.confirmSync": false,
   "terminal.external.osxExec": "warp.app",
+  "terminal.integrated.profiles.osx": {
+    "dev": {
+      "path": "${workspaceFolder}/dev.sh"
+    }
+  },
   "terminal.integrated.scrollback": 1000000,
   "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "material-icon-theme",
