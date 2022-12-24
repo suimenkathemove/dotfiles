@@ -19,5 +19,14 @@
   {
     "key": "shift+cmd+f",
     "command": "search.action.openEditor"
+  },
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.reloadWindow"
+  },
+  {
+    "key": "cmd+r",
+    "command": "-workbench.action.reloadWindow",
+    "when": "isDevelopment"
   }
 ]
