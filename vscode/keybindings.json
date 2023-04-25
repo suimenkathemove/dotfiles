@@ -18,7 +18,7 @@
   },
   {
     "key": "shift+cmd+f",
-    "command": "search.action.openEditor"
+    "command": "search.action.openNewEditor"
   },
   {
     "key": "cmd+r",
@@ -42,5 +42,13 @@
     "key": "cmd+k cmd+r",
     "command": "-git.revertSelectedRanges",
     "when": "isInDiffEditor"
+  },
+  {
+    "key": "cmd+2",
+    "command": "-workbench.action.focusSecondEditorGroup"
+  },
+  {
+    "key": "cmd+2",
+    "command": "workbench.action.focusPanel"
   }
 ]
