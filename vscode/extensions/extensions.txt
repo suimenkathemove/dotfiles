@@ -2,7 +2,6 @@ adpyke.codesnap
 adpyke.vscode-sql-formatter
 asvetliakov.vscode-neovim
 aws-scripting-guy.cform
-cschleiden.vscode-github-actions
 DavidAnson.vscode-markdownlint
 dbaeumer.vscode-eslint
 dracula-theme.theme-dracula
@@ -38,5 +37,4 @@ tamasfe.even-better-toml
 team-sapling.sapling
 timonwong.shellcheck
 vadimcn.vscode-lldb
-vsls-contrib.codetour
 yzhang.markdown-all-in-one
