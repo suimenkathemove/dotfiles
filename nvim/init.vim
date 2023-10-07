@@ -13,3 +13,5 @@ vnoremap / /\V
 vnoremap ? ?\V
 
 set clipboard+=unnamed
+
+colorscheme blue
