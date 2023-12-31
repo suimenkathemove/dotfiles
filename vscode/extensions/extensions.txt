@@ -1,5 +1,6 @@
 adpyke.codesnap
 adpyke.vscode-sql-formatter
+apollographql.vscode-apollo
 asvetliakov.vscode-neovim
 aws-scripting-guy.cform
 DavidAnson.vscode-markdownlint
