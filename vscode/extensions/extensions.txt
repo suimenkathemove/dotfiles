@@ -13,6 +13,7 @@ foxundermoon.shell-format
 gera2ld.markmap-vscode
 GitHub.copilot
 GitHub.copilot-chat
+github.vscode-github-actions
 GraphQL.vscode-graphql
 GraphQL.vscode-graphql-syntax
 IBM.output-colorizer
