@@ -1,0 +1,24 @@
+[tasks.init]
+dependencies = ["install", "link", "reload-tmux-conf"]
+
+[tasks.install]
+script = '''
+sh install/install.sh
+makers install-vscode-extensions
+'''
+
+[tasks.install-vscode-extensions]
+script = '''
+sh vscode/extensions/install.sh
+'''
+
+[tasks.link]
+script = '''
+sh .bin/link.sh
+sh dotfiles_private/.bin/link.sh
+'''
+
+[tasks.reload-tmux-conf]
+script = '''
+tmux source-file ~/.tmux.conf
+'''
