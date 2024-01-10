@@ -14,6 +14,7 @@ brew install --cask tableplus
 brew install --cask visual-studio-code
 brew install --cask zoom
 
+brew install aws-cdk
 brew install gh
 brew install neovim
 brew install tmux
