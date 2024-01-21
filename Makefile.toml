@@ -7,6 +7,12 @@ sh install/install.sh
 makers install-vscode-extensions
 '''
 
+[tasks.write-vscode-extensions]
+cwd = "vscode/extensions"
+script = '''
+sh write.sh
+'''
+
 [tasks.install-vscode-extensions]
 script = '''
 sh vscode/extensions/install.sh
