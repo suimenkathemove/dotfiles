@@ -9,4 +9,6 @@ export VOLTA_FEATURE_PNPM=1
 # .commands
 alias hello-world="sh ~/.commands/hello-world.sh"
 alias tmux-start="sh ~/.commands/tmux-start.sh"
-alias ccm="sh ~/.commands/check-commit-message.sh"
+
+alias gitcbn="sh ~/.commands/check-branch-name.sh"
+alias gitccm="sh ~/.commands/check-commit-message.sh"
