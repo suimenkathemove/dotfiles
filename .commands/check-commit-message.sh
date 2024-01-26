@@ -9,6 +9,8 @@ if [ "$expected" = "$last_commit_message" ]; then
 
   current_branch_name=$(git branch | grep \* | cut -d ' ' -f2)
   git push origin "$current_branch_name"
+
+  git branch -D trial
 else
   echo x
 fi
