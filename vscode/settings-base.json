@@ -1,5 +1,6 @@
 {
   "editor.acceptSuggestionOnEnter": "off",
+  "editor.accessibilitySupport": "off",
   "editor.inlineSuggest.enabled": true,
   "editor.wordWrap": "on",
   "explorer.confirmDelete": false,
