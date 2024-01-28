@@ -5,6 +5,9 @@
   "editor.wordWrap": "on",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
   "git.confirmSync": false,
   "terminal.external.osxExec": "warp.app",
   "terminal.integrated.profiles.osx": {
