@@ -21,6 +21,7 @@ jakearl.search-editor-apply-changes
 kddejong.vscode-cfn-lint
 LeetCode.vscode-leetcode
 mhutchie.git-graph
+mosapride.zenkaku
 mrmlnc.vscode-scss
 ms-azuretools.vscode-docker
 ms-python.python
