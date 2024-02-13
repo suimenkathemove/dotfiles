@@ -18,5 +18,6 @@
   "terminal.integrated.scrollback": 1000000,
   "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.panel.defaultLocation": "right"
+  "workbench.panel.defaultLocation": "right",
+  "update.mode": "manual"
 }
