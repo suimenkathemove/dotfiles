@@ -19,5 +19,6 @@
   "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.panel.defaultLocation": "right",
+  "workbench.startupEditor": "none",
   "update.mode": "manual"
 }
