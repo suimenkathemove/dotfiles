@@ -17,3 +17,6 @@ alias gitccm="sh ~/.commands/check-commit-message.sh"
 if [[ -z "$ZELLIJ" ]]; then
   zellij
 fi
+
+# direnv
+eval "$(direnv hook zsh)"
