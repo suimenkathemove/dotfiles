@@ -1,8 +1,11 @@
+42crunch.vscode-openapi
 adpyke.codesnap
 adpyke.vscode-sql-formatter
 apollographql.vscode-apollo
 asvetliakov.vscode-neovim
 aws-scripting-guy.cform
+bierner.markdown-mermaid
+biomejs.biome
 davidanson.vscode-markdownlint
 dbaeumer.vscode-eslint
 dracula-theme.theme-dracula
@@ -14,6 +17,7 @@ gera2ld.markmap-vscode
 github.copilot
 github.copilot-chat
 github.vscode-github-actions
+golang.go
 graphql.vscode-graphql
 graphql.vscode-graphql-syntax
 ibm.output-colorizer
@@ -27,6 +31,7 @@ ms-azuretools.vscode-docker
 ms-python.python
 ms-python.vscode-pylance
 ms-vscode-remote.remote-containers
+ms-vsliveshare.vsliveshare
 oderwat.indent-rainbow
 pkief.material-icon-theme
 redhat.vscode-yaml
@@ -41,4 +46,6 @@ tamasfe.even-better-toml
 team-sapling.sapling
 timonwong.shellcheck
 vadimcn.vscode-lldb
+yusukehirao.vscode-markuplint
+yzane.markdown-pdf
 yzhang.markdown-all-in-one
