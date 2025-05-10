@@ -29,20 +29,20 @@
     "command": "-workbench.action.reloadWindow",
     "when": "isDevelopment"
   },
-  {
-    "key": "cmd+k cmd+r",
-    "command": "-workbench.action.keybindingsReference"
-  },
-  {
-    "key": "cmd+k cmd+r",
-    "command": "git.revertSelectedRanges",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "cmd+k cmd+r",
-    "command": "-git.revertSelectedRanges",
-    "when": "isInDiffEditor"
-  },
+  // {
+  //   "key": "cmd+k cmd+r",
+  //   "command": "-workbench.action.keybindingsReference"
+  // },
+  // {
+  //   "key": "cmd+k cmd+r",
+  //   "command": "git.revertSelectedRanges",
+  //   "when": "editorTextFocus"
+  // },
+  // {
+  //   "key": "cmd+k cmd+r",
+  //   "command": "-git.revertSelectedRanges",
+  //   "when": "isInDiffEditor"
+  // },
   {
     "key": "cmd+2",
     "command": "-workbench.action.focusSecondEditorGroup"
