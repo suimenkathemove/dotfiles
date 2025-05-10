@@ -15,7 +15,12 @@ alias gitccm="sh ~/.commands/check-commit-message.sh"
 
 # zellij
 if [[ -z "$ZELLIJ" ]]; then
-  zellij
+  SESSION_NAME=$(basename $(pwd))
+  if zellij list-sessions --short | grep -q "^$SESSION_NAME$"; then
+    zellij attach "$SESSION_NAME"
+  else
+    zellij --session "$SESSION_NAME"
+  fi
 fi
 
 # direnv
