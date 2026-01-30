@@ -1,0 +1,9 @@
+# OS
+.DS_Store
+
+# Editor backup files
+*~
+
+# Project local
+_local
+_shared
