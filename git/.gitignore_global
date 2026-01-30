@@ -4,6 +4,10 @@
 # Editor backup files
 *~
 
+# AI tools
+.cursor
+.claude
+
 # Project local
 _local
 _shared
