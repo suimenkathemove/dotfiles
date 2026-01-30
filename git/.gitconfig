@@ -1,3 +1,5 @@
 [user]
     email = yoshiharu2580@gmail.com
     name = suimenkathemove
+[credential]
+	helper = store
