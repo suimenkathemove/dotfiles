@@ -12,6 +12,7 @@ alias tmux-start="sh ~/.commands/tmux-start.sh"
 
 alias gitcbn="sh ~/.commands/check-branch-name.sh"
 alias gitccm="sh ~/.commands/check-commit-message.sh"
+alias gitae="sh ~/.commands/git-add-empty.sh"
 
 # zellij
 if [[ -z "$ZELLIJ" ]]; then
