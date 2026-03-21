@@ -1,5 +1,7 @@
 [user]
     email = yoshiharu2580@gmail.com
     name = suimenkathemove
+[alias]
+	cn = commit -m "confirmed"
 [credential]
 	helper = store
