@@ -2,6 +2,6 @@
     email = yoshiharu2580@gmail.com
     name = suimenkathemove
 [alias]
-	cn = commit -m "confirmed"
+	cn = !git commit -m "confirmed" && git push
 [credential]
 	helper = store
