@@ -3,5 +3,7 @@
     name = suimenkathemove
 [alias]
 	cn = !git commit -m "confirmed" && git push
+[push]
+	autoSetupRemote = true
 [credential]
 	helper = store

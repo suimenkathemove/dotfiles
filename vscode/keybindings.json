@@ -7,6 +7,18 @@
     "args": "<C-/>"
   },
   {
+    "key": "ctrl+u",
+    "command": "vscode-neovim.send",
+    "when": "editorTextFocus && neovim.init && neovim.mode == visual",
+    "args": "<C-u>"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "vscode-neovim.send",
+    "when": "editorTextFocus && neovim.init && neovim.mode == visual",
+    "args": "<C-d>"
+  },
+  {
     "key": "cmd+s",
     "command": "searchEditorApplyChanges.apply",
     "when": "inSearchEditor"

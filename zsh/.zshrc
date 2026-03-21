@@ -26,3 +26,6 @@ fi
 
 # direnv
 eval "$(direnv hook zsh)"
+
+# local settings (not committed)
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
