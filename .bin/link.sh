@@ -26,3 +26,13 @@ ln -sfnv "$DOTFILES_PATH/tmux/.tmux.conf" "$HOME/.tmux.conf"
 
 # VSCode
 ln_files_in_dir "$DOTFILES_PATH/vscode" "${HOME}/Library/Application Support/Code/User"
+
+# Claude Code
+ln -sfnv "$DOTFILES_PATH/.claude/settings.json" "$HOME/.claude/settings.json"
+
+# Claude Code skills
+mkdir -p "$HOME/.claude/skills"
+ln_files_in_dir "$DOTFILES_PATH/claude/skills" "$HOME/.claude/skills"
+if [ -d "$DOTFILES_PATH/claude/skills-installed" ]; then
+  ln_files_in_dir "$DOTFILES_PATH/claude/skills-installed" "$HOME/.claude/skills"
+fi

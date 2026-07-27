@@ -6,7 +6,7 @@
 
 # AI tools
 .cursor
-.claude
+**/.claude/settings.local.json
 
 # Project local
 _local

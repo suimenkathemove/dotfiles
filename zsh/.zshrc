@@ -13,16 +13,19 @@ alias tmux-start="sh ~/.commands/tmux-start.sh"
 alias gitcbn="sh ~/.commands/check-branch-name.sh"
 alias gitccm="sh ~/.commands/check-commit-message.sh"
 alias gitae="sh ~/.commands/git-add-empty.sh"
+alias gitptb="sh ~/.commands/push-trial-branch.sh"
 
-# zellij
-if [[ -z "$ZELLIJ" ]]; then
-  SESSION_NAME=$(basename $(pwd))
-  if zellij list-sessions --short | grep -q "^$SESSION_NAME$"; then
-    zellij attach "$SESSION_NAME"
-  else
-    zellij --session "$SESSION_NAME"
-  fi
-fi
+# herdr
+sh ~/.commands/herdr-start.sh
 
 # direnv
 eval "$(direnv hook zsh)"
+
+# local settings (not committed)
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+export PATH="$HOME/.local/bin:$PATH"
+
+herdr() {
+  sh ~/.commands/herdr.sh "$@"
+}

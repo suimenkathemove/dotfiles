@@ -7,6 +7,18 @@
     "args": "<C-/>"
   },
   {
+    "key": "ctrl+u",
+    "command": "vscode-neovim.send",
+    "when": "editorTextFocus && neovim.init && neovim.mode == visual",
+    "args": "<C-u>"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "vscode-neovim.send",
+    "when": "editorTextFocus && neovim.init && neovim.mode == visual",
+    "args": "<C-d>"
+  },
+  {
     "key": "cmd+s",
     "command": "searchEditorApplyChanges.apply",
     "when": "inSearchEditor"
@@ -44,6 +56,10 @@
   //   "when": "isInDiffEditor"
   // },
   {
+    "key": "cmd+1",
+    "command": "workbench.action.focusActiveEditorGroup"
+  },
+  {
     "key": "cmd+2",
     "command": "-workbench.action.focusSecondEditorGroup"
   },
@@ -55,5 +71,13 @@
     "key": "cmd+b",
     "command": "-markdown.extension.editing.toggleBold",
     "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+  },
+  {
+    "key": "shift+enter",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "\u001b\r"
+    },
+    "when": "terminalFocus"
   }
 ]
