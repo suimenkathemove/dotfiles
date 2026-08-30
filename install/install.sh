@@ -19,9 +19,13 @@ brew install gh
 brew install neovim
 brew install tmux
 
-# volta
-brew install volta
-volta install node
-volta install pnpm
-volta install ncu
-volta install @antfu/ni
+# mise
+brew install mise
+mise use -g node@lts
+mise use -g npm:pnpm
+mise use -g npm:npm-check-updates
+mise use -g npm:@antfu/ni
+mise use -g npm:cspell
+
+# cspell: link the shared personal dictionary as global config
+cspell link add "$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)/cspell.json"
