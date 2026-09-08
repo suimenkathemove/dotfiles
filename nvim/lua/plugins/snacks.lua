@@ -43,6 +43,14 @@ return {
       end,
       desc = "ファイラ（snacks）の開閉",
     },
+    -- ピッカー
+    {
+      "<leader>ff",
+      function()
+        Snacks.picker.files()
+      end,
+      desc = "ファイルを検索",
+    },
   },
   opts = {
     picker = {
