@@ -51,6 +51,13 @@ return {
       end,
       desc = "ファイルを検索",
     },
+    {
+      "<leader>fg",
+      function()
+        Snacks.picker.grep()
+      end,
+      desc = "文字列を検索",
+    },
   },
   opts = {
     picker = {
