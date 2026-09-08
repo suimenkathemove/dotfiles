@@ -5,6 +5,10 @@ local parsers = {
   "dockerfile",
   "go",
   "html",
+  "javascript",
+  "json",
+  "lua",
+  "markdown",
 local filetypes = {
 return {
   "nvim-treesitter/nvim-treesitter",
