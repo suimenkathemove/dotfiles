@@ -89,7 +89,6 @@ return {
       autokeys = "abcdefghijklmnopqrstuvwxyz",
       preset = {
         keys = {
-          -- TODO: Telescopeを使うようにする
           {
             icon = " ",
             key = "f",
