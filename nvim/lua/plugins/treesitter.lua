@@ -15,6 +15,10 @@ local parsers = {
   "tsx",
   "typescript",
   "vim",
+  "vimdoc",
+  "yaml",
+}
+
 local filetypes = {
 return {
   "nvim-treesitter/nvim-treesitter",
