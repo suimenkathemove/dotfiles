@@ -41,3 +41,11 @@ ln_files_in_dir "$DOTFILES_PATH/claude/skills" "$HOME/.claude/skills"
 if [ -d "$DOTFILES_PATH/claude/skills-installed" ]; then
   ln_files_in_dir "$DOTFILES_PATH/claude/skills-installed" "$HOME/.claude/skills"
 fi
+
+# Claude Code output styles
+mkdir -p "$HOME/.claude/output-styles"
+ln_files_in_dir "$DOTFILES_PATH/claude/output-styles" "$HOME/.claude/output-styles"
+
+# Claude Code hooks
+mkdir -p "$HOME/.claude/hooks"
+ln_files_in_dir "$DOTFILES_PATH/claude/hooks" "$HOME/.claude/hooks"

@@ -17,4 +17,45 @@
   },
   "skipWorkflowUsageWarning": true,
   "agentPushNotifEnabled": true,
+  "permissions": {
+    "allow": [
+      "Read",
+      "Edit",
+      "Write"
+    ],
+    "defaultMode": "auto"
+  },
+  "model": "opus[1m]",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$HOME/.claude/hooks/block-git-write.sh\""
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$HOME/.claude/hooks/herdr-agent-state.sh\" session",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "sh \"$HOME/.claude/statusline-command.sh\""
+  },
+  "effortLevel": "low",
+  "tui": "fullscreen",
+  "skipDangerousModePermissionPrompt": true
 }
