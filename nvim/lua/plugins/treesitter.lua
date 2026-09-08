@@ -39,6 +39,11 @@ local filetypes = {
   "toml",
   "typescriptreact",
   "typescript",
+  "vim",
+  "help",
+  "yaml",
+}
+
 return {
   "nvim-treesitter/nvim-treesitter",
   cond = not vim.g.vscode,
