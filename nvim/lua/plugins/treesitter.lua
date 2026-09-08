@@ -23,6 +23,10 @@ local parsers = {
 
 -- vim.treesitter.start() を呼ぶ filetype
 local filetypes = {
+  "bash",
+  "sh",
+  "zsh",
+  "css",
 return {
   "nvim-treesitter/nvim-treesitter",
   cond = not vim.g.vscode,
