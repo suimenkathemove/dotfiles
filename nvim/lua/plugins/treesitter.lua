@@ -21,6 +21,7 @@ local parsers = {
   "yaml",
 }
 
+-- vim.treesitter.start() を呼ぶ filetype
 local filetypes = {
 return {
   "nvim-treesitter/nvim-treesitter",
