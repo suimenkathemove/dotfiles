@@ -58,5 +58,6 @@ return {
     vim.api.nvim_create_autocmd("FileType", {
       pattern = filetypes,
       callback = function()
+        pcall(vim.treesitter.start)
   end,
 }
