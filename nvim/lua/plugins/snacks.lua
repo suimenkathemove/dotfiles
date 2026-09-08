@@ -58,6 +58,13 @@ return {
       end,
       desc = "文字列を検索",
     },
+    {
+      "<leader>fb",
+      function()
+        Snacks.picker.buffers()
+      end,
+      desc = "バッファを検索",
+    },
   },
   opts = {
     picker = {
