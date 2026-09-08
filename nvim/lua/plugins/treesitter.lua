@@ -22,6 +22,7 @@ local parsers = {
 }
 
 -- vim.treesitter.start() を呼ぶ filetype
+-- インジェクションで呼ばれるだけのパーサ（markdown_inline など）は
 -- filetype を持たないので、ここには並ばない
 local filetypes = {
   "bash",
