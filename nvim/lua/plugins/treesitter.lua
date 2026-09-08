@@ -59,6 +59,7 @@ return {
       pattern = filetypes,
       callback = function()
         pcall(vim.treesitter.start)
+        -- インデントは experimental 扱い。問題が出たらこの行を消す
         vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
   end,
 }
