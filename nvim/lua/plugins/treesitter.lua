@@ -58,6 +58,7 @@ return {
     vim.api.nvim_create_autocmd("FileType", {
       pattern = filetypes,
       callback = function()
+        -- パーサ未導入の filetype では失敗するので握りつぶす
         pcall(vim.treesitter.start)
         -- インデントは experimental 扱い。問題が出たらこの行を消す
         vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
