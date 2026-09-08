@@ -9,6 +9,12 @@ local parsers = {
   "json",
   "lua",
   "markdown",
+  "python",
+  "rust",
+  "toml",
+  "tsx",
+  "typescript",
+  "vim",
 local filetypes = {
 return {
   "nvim-treesitter/nvim-treesitter",
