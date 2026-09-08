@@ -1,4 +1,5 @@
 -- 対象言語
+-- パーサ名と filetype が異なるものは filetype 側を別に指定する
 local parsers = {
   "bash",
   "css",
