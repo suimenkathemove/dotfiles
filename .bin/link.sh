@@ -19,7 +19,8 @@ COMMANDS_DIR=".commands"
 ln -sfnv "$DOTFILES_PATH/$COMMANDS_DIR" "$HOME/$COMMANDS_DIR"
 
 # nvim
-ln -sfnv "$DOTFILES_PATH/nvim/init.vim" "$HOME/.config/nvim/init.vim"
+mkdir -p "$HOME/.config/nvim"
+ln_files_in_dir "$DOTFILES_PATH/nvim" "$HOME/.config/nvim"
 
 # tmux
 ln -sfnv "$DOTFILES_PATH/tmux/.tmux.conf" "$HOME/.tmux.conf"

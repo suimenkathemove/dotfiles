@@ -1,0 +1,94 @@
+-- 起動画面（dashboard）とピッカー（picker）
+
+-- 各階層でディレクトリを先、ファイルを後にしてパスを比較する。
+-- 絞り込みを入力しているときは、あいまい検索のスコア順を優先する。
+local function sort_dirs_first(a, b)
+  if a.score ~= b.score then
+    return a.score > b.score
+  end
+  local ap = vim.split(a.file or "", "/", { plain = true })
+  local bp = vim.split(b.file or "", "/", { plain = true })
+  for i = 1, math.min(#ap, #bp) do
+    -- その階層でディレクトリ（まだ下に続く）か、ファイル（最後の要素）か
+    local a_is_dir, b_is_dir = i < #ap, i < #bp
+    if a_is_dir ~= b_is_dir then
+      return a_is_dir
+    end
+    if ap[i] ~= bp[i] then
+      return ap[i] < bp[i]
+    end
+  end
+  return #ap < #bp
+end
+
+return {
+  "folke/snacks.nvim",
+  cond = not vim.g.vscode,
+  -- lazy = false のプラグイン間で先に読み込む（描画前に色を確定させる）
+  priority = 1000,
+  -- 起動画面なので遅延読み込みしない
+  lazy = false,
+  keys = {
+    -- oil は <leader>e / -。こちらはドロワー型のツリーとして使い分ける
+    {
+      "<leader>E",
+      function()
+        -- Snacks.explorer() は開く専用なので、開いていれば閉じる
+        local explorer = Snacks.picker.get({ source = "explorer" })[1]
+        if explorer then
+          explorer:close()
+        else
+          Snacks.explorer()
+        end
+      end,
+      desc = "ファイラ（snacks）の開閉",
+    },
+  },
+  opts = {
+    picker = {
+      enabled = true,
+      -- 絞り込みが空のときも並べ替える（既定では走査順のまま）
+      matcher = { sort_empty = true },
+      sources = {
+        -- ファイル一覧を走査順ではなく、ディレクトリ優先のパス順で並べる
+        files = { sort = sort_dirs_first },
+      },
+    },
+    dashboard = {
+      enabled = true,
+      -- キーを指定していない項目に a, b, c... と自動で割り当てる
+      autokeys = "abcdefghijklmnopqrstuvwxyz",
+      preset = {
+        keys = {
+          -- TODO: Telescopeを使うようにする
+          {
+            icon = " ",
+            key = "f",
+            desc = "ファイルを検索",
+            action = function()
+              Snacks.picker.files()
+            end,
+          },
+          {
+            icon = " ",
+            key = "g",
+            desc = "文字列を検索",
+            action = function()
+              Snacks.picker.grep()
+            end,
+          },
+          { icon = " ", key = "e", desc = "ファイラを開く", action = "<cmd>Oil<CR>" },
+          { icon = " ", key = "n", desc = "新規ファイル", action = "<cmd>ene | startinsert<CR>" },
+          { icon = " ", key = "q", desc = "終了", action = "<cmd>qa<CR>" },
+        },
+      },
+      sections = {
+        { section = "header" },
+        { icon = " ", title = "最近のファイル", section = "recent_files", indent = 2, padding = 1 },
+        { icon = " ", title = "プロジェクト", section = "projects", indent = 2, padding = 1 },
+        { icon = " ", title = "キーマップ", section = "keys", indent = 2, padding = 1 },
+        { section = "startup" },
+      },
+    },
+  },
+}
