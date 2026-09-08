@@ -51,5 +51,6 @@ return {
   cond = not vim.g.vscode,
   branch = "main",
   build = ":TSUpdate",
+  lazy = false,
   end,
 }
