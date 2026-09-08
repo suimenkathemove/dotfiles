@@ -28,3 +28,5 @@ while IFS= read -r FILE; do
 done <<< "$UNTRACKED_FILES"
 
 git commit -m "add empty files"
+
+git push
