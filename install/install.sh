@@ -18,6 +18,8 @@ brew install --cask zoom
 brew install aws-cdk
 brew install gh
 brew install neovim
+# nvim-treesitter の main ブランチがパーサのコンパイルに使う
+brew install tree-sitter-cli
 brew install tmux
 
 # mise
