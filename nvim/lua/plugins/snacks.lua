@@ -72,6 +72,20 @@ return {
       end,
       desc = "ヘルプを検索",
     },
+    {
+      "<leader>gs",
+      function()
+        Snacks.picker.git_status()
+      end,
+      desc = "git status",
+    },
+    {
+      "<leader>gc",
+      function()
+        Snacks.picker.git_log()
+      end,
+      desc = "git のコミット履歴",
+    },
   },
   opts = {
     picker = {
