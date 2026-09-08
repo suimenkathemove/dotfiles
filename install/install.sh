@@ -12,6 +12,7 @@ brew install --cask docker
 brew install --cask raycast
 brew install --cask tableplus
 brew install --cask visual-studio-code
+brew install --cask wezterm
 brew install --cask zoom
 
 brew install aws-cdk
