@@ -65,6 +65,13 @@ return {
       end,
       desc = "バッファを検索",
     },
+    {
+      "<leader>fh",
+      function()
+        Snacks.picker.help()
+      end,
+      desc = "ヘルプを検索",
+    },
   },
   opts = {
     picker = {
