@@ -21,9 +21,7 @@ local function sort_dirs_first(a, b)
   return #ap < #bp
 end
 
--- ダッシュボードでは中央に出す
-local function centered_layout()
-  local default = require("snacks.picker.config.layouts").default.layout
+-- ダッシュボードでは snacks 既定の中央レイアウトに任せ、それ以外は右上に出す
   return {
     layout = {
       width = default.width,
