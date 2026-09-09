@@ -22,6 +22,7 @@ local function sort_dirs_first(a, b)
 end
 
 -- ダッシュボードでは中央に出す
+local function centered_layout()
 return {
   "folke/snacks.nvim",
   cond = not vim.g.vscode,
