@@ -28,6 +28,8 @@ local function layout_override()
   end
   -- row = 1 が上端、col = -1 が右端
   local layout = vim.deepcopy(require("snacks.picker.config.layouts").default.layout)
+  layout.row = 1
+  layout.col = -1
 end
 
 return {
