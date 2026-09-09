@@ -32,6 +32,7 @@ local function layout_override()
   layout.col = -1
   layout.min_width = nil
   layout.width = 0.25
+  -- 最大値にする0を指定すると下端が見切れるので。
   layout.height = 0.9
   layout.backdrop = false
   return { layout = layout }
