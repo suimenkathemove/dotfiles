@@ -61,7 +61,7 @@ return {
     {
       "<leader>fg",
       function()
-        Snacks.picker.grep()
+        Snacks.picker.grep({ layout = layout_override() })
       end,
       desc = "文字列を検索",
     },
