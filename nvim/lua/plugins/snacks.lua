@@ -90,11 +90,11 @@ return {
       desc = "ヘルプを検索",
     },
     {
-      "<leader>gs",
+      "<leader>fp",
       function()
-        Snacks.picker.git_status({ layout = layout_override() })
+        Snacks.picker.projects({ layout = layout_override() })
       end,
-      desc = "git status",
+      desc = "プロジェクトを検索（cwd ごと切り替える）",
     },
     {
       "<leader>gc",
