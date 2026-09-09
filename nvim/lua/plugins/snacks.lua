@@ -30,6 +30,7 @@ local function layout_override()
   local layout = vim.deepcopy(require("snacks.picker.config.layouts").default.layout)
   layout.row = 1
   layout.col = -1
+  layout.backdrop = false
   return { layout = layout }
 end
 
