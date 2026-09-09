@@ -26,6 +26,7 @@ local function layout_override()
   if vim.bo.filetype == "snacks_dashboard" then
     return
   end
+  -- row = 1 が上端、col = -1 が右端
   return {
     layout = {
       width = default.width,
