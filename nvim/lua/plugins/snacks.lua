@@ -68,28 +68,28 @@ return {
     {
       "<leader>fb",
       function()
-        Snacks.picker.buffers()
+        Snacks.picker.buffers({ layout = layout_override() })
       end,
       desc = "バッファを検索",
     },
     {
       "<leader>fh",
       function()
-        Snacks.picker.help()
+        Snacks.picker.help({ layout = layout_override() })
       end,
       desc = "ヘルプを検索",
     },
     {
       "<leader>gs",
       function()
-        Snacks.picker.git_status()
+        Snacks.picker.git_status({ layout = layout_override() })
       end,
       desc = "git status",
     },
     {
       "<leader>gc",
       function()
-        Snacks.picker.git_log()
+        Snacks.picker.git_log({ layout = layout_override() })
       end,
       desc = "git のコミット履歴",
     },
