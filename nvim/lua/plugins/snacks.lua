@@ -45,7 +45,7 @@ return {
         if explorer then
           explorer:close()
         else
-          Snacks.explorer()
+          Snacks.explorer({ layout = layout_override() })
         end
       end,
       desc = "ファイラ（snacks）の開閉",
@@ -54,7 +54,7 @@ return {
     {
       "<leader>ff",
       function()
-        Snacks.picker.files()
+        Snacks.picker.files({ layout = layout_override() })
       end,
       desc = "ファイルを検索",
     },
