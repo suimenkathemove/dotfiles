@@ -27,13 +27,7 @@ local function layout_override()
     return
   end
   -- row = 1 が上端、col = -1 が右端
-  return {
-    layout = {
-      box = "horizontal",
-      row = 1,
-      col = -1,
-    },
-  }
+  local layout = vim.deepcopy(require("snacks.picker.config.layouts").default.layout)
 end
 
 return {
