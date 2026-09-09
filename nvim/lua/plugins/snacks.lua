@@ -32,6 +32,10 @@ local function layout_override()
       box = "horizontal",
       row = 1,
       col = -1,
+    },
+  }
+end
+
 return {
   "folke/snacks.nvim",
   cond = not vim.g.vscode,
