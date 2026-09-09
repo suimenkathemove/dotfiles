@@ -29,8 +29,9 @@ local function layout_override()
   -- row = 1 が上端、col = -1 が右端
   return {
     layout = {
-      width = default.width,
-      height = default.height,
+      box = "horizontal",
+      row = 1,
+      col = -1,
 return {
   "folke/snacks.nvim",
   cond = not vim.g.vscode,
