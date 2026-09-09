@@ -32,6 +32,7 @@ local function layout_override()
   layout.col = -1
   layout.min_width = nil
   layout.width = 0.25
+  layout.height = 0.9
   layout.backdrop = false
   return { layout = layout }
 end
