@@ -21,6 +21,7 @@ local function sort_dirs_first(a, b)
   return #ap < #bp
 end
 
+-- ダッシュボードでは中央に出す
 return {
   "folke/snacks.nvim",
   cond = not vim.g.vscode,
