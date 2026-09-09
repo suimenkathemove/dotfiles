@@ -23,6 +23,11 @@ end
 
 -- ダッシュボードでは中央に出す
 local function centered_layout()
+  local default = require("snacks.picker.config.layouts").default.layout
+  return {
+    layout = {
+      width = default.width,
+      height = default.height,
 return {
   "folke/snacks.nvim",
   cond = not vim.g.vscode,
