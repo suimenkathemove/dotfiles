@@ -22,6 +22,10 @@ local function sort_dirs_first(a, b)
 end
 
 -- ダッシュボードでは snacks 既定の中央レイアウトに任せ、それ以外は右上に出す
+local function layout_override()
+  if vim.bo.filetype == "snacks_dashboard" then
+    return
+  end
   return {
     layout = {
       width = default.width,
